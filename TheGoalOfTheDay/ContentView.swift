@@ -15,7 +15,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-//            Color(.systemGray5)
+            Color("1g")
             VStack {
                 ZStack {
                     RoundedRectangle(cornerRadius: 5)
@@ -30,19 +30,10 @@ struct ContentView: View {
                         .font(.title2)
                         Text("Duolingo")
                     }
+                    CapsuleRectangle()
                 }
-                HStack {
-                    Circle()
-                        .foregroundColor(Color("dust"))
-                    Circle()
-                        .foregroundColor(Color("peachDust"))
-                    Circle()
-                        .foregroundColor(Color("peach"))
-                    Circle()
-                        .foregroundColor(Color("greenDust"))
-                    Circle()
-                        .foregroundColor(Color("green"))
-                }
+                
+
             }
             
             
