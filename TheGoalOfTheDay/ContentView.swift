@@ -26,7 +26,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-//            Color
+            //            Color
             VStack {
                 HStack {
                     Circle()
@@ -56,55 +56,21 @@ struct ContentView: View {
                     Circle()
                         .fill(Color(.systemCyan))
                 }
-                ZStack {
-                    Rectangle()
-                        .fill(Color("2g"))
-                        .frame(height: 200)
-                    Text("fs")
-                        .foregroundColor(.red)
-                }
                 HStack {
                     Circle()
-                        .fill(Color("1"))
+                        .fill(Color(.systemGray)) //#ff3b30
                     Circle()
-                        .fill(Color("2"))
+                        .fill(Color(.systemGray2))
                     Circle()
-                        .fill(Color("3"))
+                        .fill(Color(.systemGray3))
                     Circle()
-                        .fill(Color("4"))
+                        .fill(Color(.systemGray4))
                     Circle()
-                        .fill(Color("5"))
+                        .fill(Color(.systemGray5))
+                    Circle()
+                        .fill(Color(.systemGray6))
                 }
-                HStack {
-                    Circle()
-                        .fill(Color("1g"))
-                    Circle()
-                        .fill(Color("2g"))
-                    Circle()
-                        .fill(Color("3g"))
-                    Circle()
-                        .fill(Color("4g"))
-                    Circle()
-                        .fill(Color("5g"))
-                }
-                HStack {
-                    Circle()
-                        .fill(Color("dust"))
-                    Circle()
-                        .fill(Color("peachDust"))
-                    Circle()
-                        .fill(Color("peach"))
-                    Circle()
-                        .fill(Color("greenDust"))
-                    Circle()
-                        .fill(Color("green"))
-                }
-                
-                
             }
-            
-            
-            
         }
         .ignoresSafeArea()
     }
