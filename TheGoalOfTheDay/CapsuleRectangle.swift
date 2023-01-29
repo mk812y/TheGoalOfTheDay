@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CapsuleRectangle: View {
     var body: some View {
-        CapsuleRow()
+        ColorExample()
     }
 }
 

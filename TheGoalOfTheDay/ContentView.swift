@@ -26,51 +26,8 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            //            Color
-            VStack {
-                HStack {
-                    Circle()
-                        .fill(Color(.systemRed)) //#ff3b30
-                    Circle()
-                        .fill(Color(.systemOrange))
-                    Circle()
-                        .fill(Color(.systemYellow))
-                    Circle()
-                        .fill(Color(.systemGreen))
-                    Circle()
-                        .fill(Color(.systemMint))
-                    Circle()
-                        .fill(Color(.systemTeal))
-                }
-                HStack {
-                    Circle()
-                        .fill(Color(.systemBrown)) //#ff3b30
-                    Circle()
-                        .fill(Color(.systemPink))
-                    Circle()
-                        .fill(Color(.systemPurple))
-                    Circle()
-                        .fill(Color(.systemIndigo))
-                    Circle()
-                        .fill(Color(.systemBlue))
-                    Circle()
-                        .fill(Color(.systemCyan))
-                }
-                HStack {
-                    Circle()
-                        .fill(Color(.systemGray)) //#ff3b30
-                    Circle()
-                        .fill(Color(.systemGray2))
-                    Circle()
-                        .fill(Color(.systemGray3))
-                    Circle()
-                        .fill(Color(.systemGray4))
-                    Circle()
-                        .fill(Color(.systemGray5))
-                    Circle()
-                        .fill(Color(.systemGray6))
-                }
-            }
+            Color(.systemGray6)
+            ColorExample()
         }
         .ignoresSafeArea()
     }
