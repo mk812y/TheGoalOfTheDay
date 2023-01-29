@@ -38,20 +38,20 @@ struct ColorExample: View {
             //                Circle()
             //                    .fill(Color(.systemCyan))
             //            }
-//            HStack {
-//                Circle()
-//                    .fill(Color(.systemRed))
-//                Circle()
-//                    .fill(Color(.systemYellow))
-//                Circle()
-//                    .fill(Color(.systemGreen))
-//                Circle()
-//                    .fill(Color(.systemBlue))
-//                Circle()
-//                    .fill(Color(.black))
-//                Circle()
-//                    .fill(Color(.white))
-//            }
+            //            HStack {
+            //                Circle()
+            //                    .fill(Color(.systemRed))
+            //                Circle()
+            //                    .fill(Color(.systemYellow))
+            //                Circle()
+            //                    .fill(Color(.systemGreen))
+            //                Circle()
+            //                    .fill(Color(.systemBlue))
+            //                Circle()
+            //                    .fill(Color(.black))
+            //                Circle()
+            //                    .fill(Color(.white))
+            //            }
             HStack {
                 Circle()
                     .fill(Color(.black))
@@ -69,11 +69,9 @@ struct ColorExample: View {
                     .fill(Color(.systemGray6))
                 Circle()
                     .fill(Color(.white))
-                
             }
-            Spacer()
         }
-        .padding(.top, 50)
+        .padding()
     }
 }
 

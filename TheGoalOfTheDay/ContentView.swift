@@ -26,8 +26,15 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Color(.systemGray6)
-            ColorExample()
+            Color(.systemGray5)
+            VStack {
+                ZStack {
+                    CircleBaseView()
+                    
+                }
+                ColorExample()
+            }
+            
         }
         .ignoresSafeArea()
     }
