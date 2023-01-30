@@ -11,7 +11,7 @@ struct CicleProgressLine: View {
     @State var color: Color
     @State var from: Double
     @State var to: Double
-    @State var rotation: Int
+    @State var rotation: Double
     
     var body: some View {
         Circle()
@@ -19,7 +19,7 @@ struct CicleProgressLine: View {
             .trim(from: from, to: to)
             .stroke(color, lineWidth: 20)
             .padding()
-            .rotationEffect(.degrees(Double(rotation)))
+            .rotationEffect(.degrees(rotation))
     }
 }
 

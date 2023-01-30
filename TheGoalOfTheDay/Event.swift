@@ -9,9 +9,10 @@ import SwiftUI
 
 struct Event: Identifiable, Hashable {
     var id = UUID()
-    var color: Color
-    var from: Double
-    var to: Double
-    var rotation: Double
-    
+    var name: String = "Name"
+    var description: String = "Description"
+    var color: Color = Color(.systemGray)
+    var from: Double = 0.0
+    var to: Double = 0.0
+    var rotation: Double = 0.0
 }
