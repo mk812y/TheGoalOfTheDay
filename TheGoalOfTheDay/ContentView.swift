@@ -22,7 +22,7 @@ struct Job: Identifiable {
 }
 
 struct ContentView: View {
-    @State private var progress = 0.6
+    @State private var rotation = 0
     
     var body: some View {
         ZStack {
@@ -30,7 +30,11 @@ struct ContentView: View {
             VStack {
                 ZStack {
                     CircleBaseView()
-                    
+                    CicleProgressLine(color: .secondary, from: 0.0, to: 0.10, rotation: rotation)
+                    CicleProgressLine(color: .red, from: 0.11, to: 0.35, rotation: rotation)
+                    CicleProgressLine(color: .green, from: 0.45, to: 0.7, rotation: rotation)
+                    CicleProgressLine(color: .yellow, from: 0.75, to: 0.85, rotation: rotation)
+                    CicleProgressLine(color: .blue, from: 0.89, to: 0.98, rotation: rotation)
                 }
                 ColorExample()
             }
