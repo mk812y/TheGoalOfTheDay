@@ -5,11 +5,11 @@
 //  Created by Михаил Куприянов on 18.01.2023.
 //
 // декомпонизирует глобальные планы на создание супер приложения по шагам
-// 1 view с одним таймером
-//  а название
-//  б кнопка старт/стоп/
-//  в общее время таймера
-//  г время за последний запуск
+//+ 1 view с одним таймером
+//+  а название
+//+  б кнопка старт/стоп/
+//+  в общее время таймера
+//+  г время за последний запуск
 // 2 научить таймер запускаться и останавливаться,
 //   отображая время за последний запуск
 // 3 научить таймер хранить время последнего запуска и стартовать с него
@@ -24,6 +24,8 @@ struct ContentView: View {
     @State private var isStart = false
     @State private var countTime: Int = 0
     @State private var allCountTime: Int = 0
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
     
     var body: some View {
         ZStack {
@@ -45,6 +47,9 @@ struct ContentView: View {
                         }
                         Text("\(countTime) | \(allCountTime)")
                             .font(.largeTitle)
+                            .onReceive(timer) { _ in
+                                countTime += 1
+                            }
                     }
                 }
                 ColorExample()
