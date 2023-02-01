@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A512D17A297F05F900082A0B /* ColorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512D179297F05F900082A0B /* ColorExample.swift */; };
+		A55FC782298AB60600F5DAD9 /* ChartsViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FC781298AB60600F5DAD9 /* ChartsViewTest.swift */; };
 		A56E9AE32986EFAF0008B1F5 /* CircleBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56E9AE22986EFAF0008B1F5 /* CircleBaseView.swift */; };
 		A56E9AE52986F5100008B1F5 /* BinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56E9AE42986F5100008B1F5 /* BinView.swift */; };
 		A5834DD429882A340098A735 /* CicleProgressLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5834DD329882A340098A735 /* CicleProgressLine.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		A512D179297F05F900082A0B /* ColorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExample.swift; sourceTree = "<group>"; };
+		A55FC781298AB60600F5DAD9 /* ChartsViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewTest.swift; sourceTree = "<group>"; };
 		A56E9AE22986EFAF0008B1F5 /* CircleBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBaseView.swift; sourceTree = "<group>"; };
 		A56E9AE42986F5100008B1F5 /* BinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinView.swift; sourceTree = "<group>"; };
 		A5834DD329882A340098A735 /* CicleProgressLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CicleProgressLine.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 				A56E9AE22986EFAF0008B1F5 /* CircleBaseView.swift */,
 				A5834DD329882A340098A735 /* CicleProgressLine.swift */,
 				A56E9AE42986F5100008B1F5 /* BinView.swift */,
+				A55FC781298AB60600F5DAD9 /* ChartsViewTest.swift */,
 			);
 			path = Bin;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			files = (
 				A56E9AE52986F5100008B1F5 /* BinView.swift in Sources */,
 				A5834DD429882A340098A735 /* CicleProgressLine.swift in Sources */,
+				A55FC782298AB60600F5DAD9 /* ChartsViewTest.swift in Sources */,
 				A56E9AE32986EFAF0008B1F5 /* CircleBaseView.swift in Sources */,
 				A5CBC5C5297857DB007F98F1 /* ContentView.swift in Sources */,
 				A512D17A297F05F900082A0B /* ColorExample.swift in Sources */,
