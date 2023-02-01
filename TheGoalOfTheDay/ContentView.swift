@@ -21,12 +21,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isStart = false
+    @State private var countTime: Int = 0
+    @State private var allCountTime: Int = 0
     
     var body: some View {
         ZStack {
             Color(.systemGray5)
             VStack {
-                
+                ZStack {
+                    Rectangle()
+                        .fill(Color.white)
+                        .frame(height: 200)
+                    VStack(spacing: 15) {
+                        Text("Procrastination")
+                            .font(.largeTitle)
+                        Button {
+                            isStart.toggle()
+                        } label: {
+                            Image(systemName: isStart ? "stop.circle" : "play.circle")
+                                .font(.largeTitle)
+                                .foregroundColor(isStart ? .red : .green)
+                        }
+                        Text("\(countTime) | \(allCountTime)")
+                            .font(.largeTitle)
+                    }
+                }
                 ColorExample()
             }
         }

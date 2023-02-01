@@ -49,6 +49,8 @@
 		A505089929898C8400370B7F /* Bin */ = {
 			isa = PBXGroup;
 			children = (
+				A5834DD5298832490098A735 /* Event.swift */,
+				A5834DD7298836390098A735 /* EventData.swift */,
 				A56E9AE22986EFAF0008B1F5 /* CircleBaseView.swift */,
 				A5834DD329882A340098A735 /* CicleProgressLine.swift */,
 				A56E9AE42986F5100008B1F5 /* BinView.swift */,
@@ -79,8 +81,6 @@
 			children = (
 				A5CBC5C2297857DB007F98F1 /* TheGoalOfTheDayApp.swift */,
 				A5CBC5C4297857DB007F98F1 /* ContentView.swift */,
-				A5834DD5298832490098A735 /* Event.swift */,
-				A5834DD7298836390098A735 /* EventData.swift */,
 				A505089929898C8400370B7F /* Bin */,
 				A5CBC5C6297857DC007F98F1 /* Assets.xcassets */,
 				A5CBC5C8297857DC007F98F1 /* Preview Content */,
