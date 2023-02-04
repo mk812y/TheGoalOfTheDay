@@ -32,6 +32,12 @@ struct BinView: View {
             }
             .gaugeStyle(.accessoryCircular)
         .scaleEffect(6.5)
+//            let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+//            Text("\(countTime) | \(allCountTime)")
+//                .font(.largeTitle)
+//                .onReceive(timer) { _ in
+//                    countTime += 1
+//                }
         }
     }
 }

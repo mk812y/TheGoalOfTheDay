@@ -18,14 +18,17 @@
 // 6 визуализировать в красивый лейбл все пункты ^^
 
 
+//использовать дата, но работать с секундами, интервалы работы указывать в секундах + дата
+//хранить дата
+
+
 import SwiftUI
 
 struct ContentView: View {
     @State private var isStart = false
     @State private var countTime: Int = 0
     @State private var allCountTime: Int = 0
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
+    @State var timer: Timer? = nil
     
     var body: some View {
         ZStack {
@@ -40,22 +43,33 @@ struct ContentView: View {
                             .font(.largeTitle)
                         Button {
                             isStart.toggle()
+                            if isStart {
+                                startTimer()
+                            } else {
+                                stopTimer()
+                            }
                         } label: {
                             Image(systemName: isStart ? "stop.circle" : "play.circle")
                                 .font(.largeTitle)
                                 .foregroundColor(isStart ? .red : .green)
                         }
-                        Text("\(countTime) | \(allCountTime)")
-                            .font(.largeTitle)
-                            .onReceive(timer) { _ in
-                                countTime += 1
-                            }
+                        Text("\(countTime)")
+                        
                     }
                 }
                 ColorExample()
             }
         }
         .ignoresSafeArea()
+    }
+    
+    func startTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+            countTime += 1
+        }
+    }
+    func stopTimer() {
+        timer?.invalidate()
     }
 }
 
