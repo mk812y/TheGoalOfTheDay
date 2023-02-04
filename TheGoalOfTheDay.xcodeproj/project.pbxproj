@@ -11,6 +11,8 @@
 		A55FC782298AB60600F5DAD9 /* ChartsViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FC781298AB60600F5DAD9 /* ChartsViewTest.swift */; };
 		A56E9AE32986EFAF0008B1F5 /* CircleBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56E9AE22986EFAF0008B1F5 /* CircleBaseView.swift */; };
 		A56E9AE52986F5100008B1F5 /* BinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56E9AE42986F5100008B1F5 /* BinView.swift */; };
+		A5799209298EB0A3006EACD4 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5799207298EB0A3006EACD4 /* CoreData.xcdatamodeld */; };
+		A579920B298EB441006EACD4 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A579920A298EB441006EACD4 /* Persistence.swift */; };
 		A5834DD429882A340098A735 /* CicleProgressLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5834DD329882A340098A735 /* CicleProgressLine.swift */; };
 		A5834DD6298832490098A735 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5834DD5298832490098A735 /* Event.swift */; };
 		A5834DD8298836390098A735 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5834DD7298836390098A735 /* EventData.swift */; };
@@ -25,6 +27,8 @@
 		A55FC781298AB60600F5DAD9 /* ChartsViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewTest.swift; sourceTree = "<group>"; };
 		A56E9AE22986EFAF0008B1F5 /* CircleBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBaseView.swift; sourceTree = "<group>"; };
 		A56E9AE42986F5100008B1F5 /* BinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinView.swift; sourceTree = "<group>"; };
+		A5799208298EB0A3006EACD4 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		A579920A298EB441006EACD4 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		A5834DD329882A340098A735 /* CicleProgressLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CicleProgressLine.swift; sourceTree = "<group>"; };
 		A5834DD5298832490098A735 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		A5834DD7298836390098A735 /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 			children = (
 				A5CBC5C2297857DB007F98F1 /* TheGoalOfTheDayApp.swift */,
 				A5CBC5C4297857DB007F98F1 /* ContentView.swift */,
+				A5799207298EB0A3006EACD4 /* CoreData.xcdatamodeld */,
+				A579920A298EB441006EACD4 /* Persistence.swift */,
 				A505089929898C8400370B7F /* Bin */,
 				A5CBC5C6297857DC007F98F1 /* Assets.xcassets */,
 				A5CBC5C8297857DC007F98F1 /* Preview Content */,
@@ -166,8 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A579920B298EB441006EACD4 /* Persistence.swift in Sources */,
 				A56E9AE52986F5100008B1F5 /* BinView.swift in Sources */,
 				A5834DD429882A340098A735 /* CicleProgressLine.swift in Sources */,
+				A5799209298EB0A3006EACD4 /* CoreData.xcdatamodeld in Sources */,
 				A55FC782298AB60600F5DAD9 /* ChartsViewTest.swift in Sources */,
 				A56E9AE32986EFAF0008B1F5 /* CircleBaseView.swift in Sources */,
 				A5CBC5C5297857DB007F98F1 /* ContentView.swift in Sources */,
@@ -375,6 +383,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A5799207298EB0A3006EACD4 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A5799208298EB0A3006EACD4 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = A5799208298EB0A3006EACD4 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A5CBC5B7297857DB007F98F1 /* Project object */;
 }

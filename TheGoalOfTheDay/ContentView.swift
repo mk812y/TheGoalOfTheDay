@@ -28,7 +28,7 @@ struct ContentView: View {
     @State private var isStart = false
     @State private var countTime: Int = 0
     @State private var allCountTime: Int = 0
-    @State var timer: Timer? = nil
+    @State var timerp: Timer? = nil
     
     var body: some View {
         ZStack {
@@ -64,12 +64,12 @@ struct ContentView: View {
     }
     
     func startTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+        timerp = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
             countTime += 1
         }
     }
     func stopTimer() {
-        timer?.invalidate()
+        timerp?.invalidate()
     }
 }
 
