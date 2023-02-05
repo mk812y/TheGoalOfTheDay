@@ -23,12 +23,18 @@
 
 
 import SwiftUI
+import CoreData
 
 struct ContentView: View {
     @State private var isStart = false
     @State private var countTime: Int = 0
     @State private var allCountTime: Int = 0
-    @State var timerp: Timer? = nil
+    @State var timer: Timer? = nil
+    
+    @Environment(\.managedObjectContext) private var viewContext
+    
+    @FetchRequest(entity: TestExample.entity(), sortDescriptors: [])
+    private var testExamples: FetchedResults<TestExample>
     
     var body: some View {
         ZStack {
@@ -47,6 +53,7 @@ struct ContentView: View {
                                 startTimer()
                             } else {
                                 stopTimer()
+                                addIems()
                             }
                         } label: {
                             Image(systemName: isStart ? "stop.circle" : "play.circle")
@@ -54,6 +61,12 @@ struct ContentView: View {
                                 .foregroundColor(isStart ? .red : .green)
                         }
                         Text("\(countTime)")
+//                        List {
+//                            ForEach(testExamples) { testExample in
+//                                Text("\(testExample.countInSeconds)")
+//                                Text("fssf")
+//                            }
+//                        }
                         
                     }
                 }
@@ -64,12 +77,17 @@ struct ContentView: View {
     }
     
     func startTimer() {
-        timerp = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
             countTime += 1
         }
     }
     func stopTimer() {
-        timerp?.invalidate()
+        timer?.invalidate()
+    }
+    func addIems() {
+            let testExample = TestExample(context: viewContext)
+//            testExample.countInSeconds = Int32(countTime)
+
     }
 }
 
